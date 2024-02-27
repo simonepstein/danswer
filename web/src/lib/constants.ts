@@ -12,3 +12,5 @@ export const GOOGLE_DRIVE_AUTH_IS_ADMIN_COOKIE_NAME =
 export const SEARCH_TYPE_COOKIE_NAME = "search_type";
 
 export const HEADER_PADDING = "pt-[64px]";
+
+export const NEW_CHAT_URL = "/embed?personaId=2";
