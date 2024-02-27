@@ -42,7 +42,7 @@ import { usePopup } from "@/components/admin/connectors/Popup";
 import { ResizableSection } from "@/components/resizable/ResizableSection";
 import { DanswerInitializingLoader } from "@/components/DanswerInitializingLoader";
 import { ChatIntro } from "./ChatIntro";
-import { HEADER_PADDING, NEW_CHAT_URL } from "@/lib/constants";
+import { HEADER_PADDING, DEFAULT_CHAT_URL } from "@/lib/constants";
 import { computeAvailableFilters } from "@/lib/filters";
 import { useDocumentSelection } from "../chat/useDocumentSelection";
 
@@ -705,7 +705,7 @@ export const Chat = ({
                           availableTags={availableTags}
                         />
                       )}
-                      <Link href={NEW_CHAT_URL} className="flex">
+                      <Link href={DEFAULT_CHAT_URL} className="flex">
                         <BasicClickable fullWidth>
                           <div className="flex text-xs">
                             <FiPlusSquare className="my-auto mr-2" /> New Chat

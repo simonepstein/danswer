@@ -13,4 +13,4 @@ export const SEARCH_TYPE_COOKIE_NAME = "search_type";
 
 export const HEADER_PADDING = "pt-[64px]";
 
-export const NEW_CHAT_URL = "/embed?personaId=2";
+export const DEFAULT_CHAT_URL = process.env.REACT_APP_DEFAULT_CHAT_URL || "/embed";

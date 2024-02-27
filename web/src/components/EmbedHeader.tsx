@@ -9,7 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { CustomDropdown, DefaultDropdownElement } from "./Dropdown";
 import { FiMessageSquare, FiSearch } from "react-icons/fi";
 import { usePathname } from "next/navigation";
-import { NEW_CHAT_URL } from "@/lib/constants";
+import { DEFAULT_CHAT_URL } from "@/lib/constants";
 interface HeaderProps {
   user: User | null;
 }
@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
   return (
     <header className="border-b border-border bg-background-emphasis">
       <div className="mx-8 flex h-16">
-        <Link className="py-4" href={NEW_CHAT_URL}>
+        <Link className="py-4" href={DEFAULT_CHAT_URL}>
           <div className="flex">
             <div className="w-[90px] mx-4">
               <Image src="/CTF_logo.png" alt="Logo" width="1419" height="1520" />
